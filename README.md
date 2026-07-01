@@ -17,35 +17,11 @@ The project is designed to simulate a real-world production deployment with cont
 
 ---
 
-# Architecture
+## Architecture Diagram
 
-```
-                Internet
-                                    │
-                                                 HTTP / HTTPS
-                                                                     │
-                                                                                     NGINX
-                                                                                                         │
-                                                                                                                     Reverse Proxy
-                                                                                                                                         │
-                                                                                                                                                         FastAPI
-                                                                                                                                                                        /       \
-                                                                                                                                                                              PostgreSQL      Redis
-                                                                                                                                                                                                  │
-                                                                                                                                                                                                               Docker Compose
-                                                                                                                                                                                                                                   │
-                                                                                                                                                                                                                                                    AWS EC2
-
-                                                                                                                                                                                                                                                    GitHub
-                                                                                                                                                                                                                                                        │
-                                                                                                                                                                                                                                                        Git Push
-                                                                                                                                                                                                                                                            │
-                                                                                                                                                                                                                                                            GitHub Actions
-                                                                                                                                                                                                                                                                │
-                                                                                                                                                                                                                                                                SSH
-                                                                                                                                                                                                                                                                    │
-                                                                                                                                                                                                                                                                    AWS EC2
-                                                                                                                                                                                                                                                                    ```
+<p align="center">
+  <img src="images/architecture.png" alt="Architecture Diagram" width="1000">
+</p>                                                                                                                                      ```
 
                                                                                                                                                                                                                                                                     ---
 
