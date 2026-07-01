@@ -252,6 +252,32 @@ Workflow steps:
 
 ---
 
+
+
+---
+
+## Backend Output 
+
+<p align="center">
+  <img src="output.png" alt="Backend Output" width="1000">
+</p>
+
+## Health Checks
+
+<p align="center">
+  <img src="health.png" alt="Health Checks" width="1000">
+</p>
+
+## GitHub Workflows
+
+<p align="center">
+  <img src="workflows.png" alt="GitHub Workflows" width="1000">
+</p>
+
+---
+
+
+
 # Future Improvements
 
 * HTTPS with Let's Encrypt
