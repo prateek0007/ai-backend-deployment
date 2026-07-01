@@ -1,0 +1,35 @@
+name: Deploy to vps
+
+on:
+  push:
+    branches:
+        - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      
+      - name: Checkout Repository
+        uses: actions/checkout@4
+
+      - name: Deploy to VPS
+        uses: appleboy/ssh-action@1.0.3
+
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          port: 22
+
+          scripts: |
+            cd ~/ai-backend-deployment
+
+            git pull origin main
+
+            docker compose down 
+
+            docker compose up -d --build
+
+
+
