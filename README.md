@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project demonstrates how to deploy a production-ready backend application using Docker and AWS EC2.
+THIS project demonstrates how to deploy a production-ready backend application using Docker and AWS EC2.
 
 The application consists of:
 
